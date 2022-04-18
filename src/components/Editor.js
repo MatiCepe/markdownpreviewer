@@ -1,5 +1,4 @@
 import React from "react";
-//import '../css/Boton.css';
 
 function Editor(props) {
 
@@ -24,8 +23,9 @@ function Editor(props) {
             +"**and bolded text**\n";
 
     return (
-        <div id="editorContainer" className='editor-container'>
-            <textarea className="" id="editor">{startingText}</textarea>
+        <div id="editorContainer" className='editor-container form-group m-5'>
+            <label htmlFor="editor" className="mx-left font-weight-bold">Markdown Editor...</label>
+            <textarea className="mx-auto form-control w-75 form-control-lg p-2" rows="8"   id="editor">{startingText}</textarea>
         </div>
     
     );
